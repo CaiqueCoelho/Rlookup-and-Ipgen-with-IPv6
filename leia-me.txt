@@ -1,0 +1,12 @@
+O trabalho cumpre os requisitos especificados no documento do trabalho e atende a todos os casos de teste inseridos no documento.
+
+No entanto as portas usadas não estão sendo liberadas, por algum motivo que não identifiquei, para rodar os programas deve-se alterar as portas no parametro de entrada todas as vezes que for executar em ambos os programas
+
+Para compilar use: gcc -o nome_do_executavel rlookup6.c
+Para compilar use: gcc -o nome_do_executavel ipgen6.c
+Para executar: ./nome_do_executavel ip destino/gateway/máscara/interface
+		./rlookup6  12345  ::/1:2:3::99/0/eth1  1::/1:2:3::abcd/16/eth1  
+		1::/2:4:6::8/16/eth0 1:2::/2:4:6::9/32/eth0  1:2:3::0/1:2:3::1/48/eth1  		
+		1:2:3::4/1:2:3::4/128/eth1
+Para executar: ./nome_do_executavel porta ipOrigem ipDestino
+		./ipgen6 12345 3::4 1:3:5:7:9:b:d:f
